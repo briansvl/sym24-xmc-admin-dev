@@ -29,4 +29,3 @@ const LayoutContextData = (props: ComponentWithContextProps): JSX.Element => {
 };
 
 export const Default = withSitecoreContext()(LayoutContextData);
-
