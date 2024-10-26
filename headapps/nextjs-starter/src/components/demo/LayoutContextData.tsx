@@ -1,9 +1,9 @@
-import { withSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentWithContextProps } from 'lib/component-props';
+import { withSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs'
+import { ComponentWithContextProps } from 'lib/component-props'
 
 const LayoutContextData = (props: ComponentWithContextProps): JSX.Element => {
-  const sitecoreContext = props.sitecoreContext;
-  const id = props.params?.RenderingIdentifier;
+  const sitecoreContext = props.sitecoreContext
+  const id = props.params?.RenderingIdentifier
 
   return (
     <div
@@ -25,7 +25,7 @@ const LayoutContextData = (props: ComponentWithContextProps): JSX.Element => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export const Default = withSitecoreContext()(LayoutContextData);
+export const Default = withSitecoreContext()(LayoutContextData)
